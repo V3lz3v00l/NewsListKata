@@ -1,8 +1,8 @@
 package com.b4.newslistkata.view
 
 import com.b4.newslistkata.model.News
+import com.b4.newslistkata.viewstates.NewsViewState
 
 interface NewsViewContract {
-    fun loading()
-    fun showNews(list: News)
+    fun render(state: NewsViewState)
 }
